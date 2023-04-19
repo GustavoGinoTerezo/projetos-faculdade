@@ -18,6 +18,7 @@ public class A3 {
         // TODO code application logic here
         System.out.println("Olá, mundo!");
         System.out.println("Gustavo");
+        System.out.println("Buenos dias!");
     }
     
 }
