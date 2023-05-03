@@ -8,12 +8,12 @@ package Forms;
  *
  * @author lucas
  */
-public class TelaDoenças extends javax.swing.JFrame {
+public class A3_2_TelaDoenças extends javax.swing.JFrame {
 
     /**
      * Creates new form TelaDoenças
      */
-    public TelaDoenças() {
+    public A3_2_TelaDoenças() {
         initComponents();
     }
 
@@ -58,6 +58,7 @@ public class TelaDoenças extends javax.swing.JFrame {
 
         BtnCadastrar_se.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         BtnCadastrar_se.setText("Alterar");
+        BtnCadastrar_se.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         BtnCadastrar_se.setPreferredSize(new java.awt.Dimension(120, 24));
         BtnCadastrar_se.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -72,6 +73,7 @@ public class TelaDoenças extends javax.swing.JFrame {
 
         BtnCadastrar_se1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         BtnCadastrar_se1.setText("Excluir");
+        BtnCadastrar_se1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         BtnCadastrar_se1.setPreferredSize(new java.awt.Dimension(120, 24));
         BtnCadastrar_se1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -109,6 +111,7 @@ public class TelaDoenças extends javax.swing.JFrame {
 
         BtnCadastrar_se2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         BtnCadastrar_se2.setText("Incluir");
+        BtnCadastrar_se2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         BtnCadastrar_se2.setPreferredSize(new java.awt.Dimension(120, 24));
         BtnCadastrar_se2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -125,69 +128,69 @@ public class TelaDoenças extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Últimas Consultas");
-        jLabel4.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jLabel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel6.setBackground(new java.awt.Color(102, 153, 255));
         jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("Data da Alteração");
-        jLabel6.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jLabel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel7.setBackground(new java.awt.Color(102, 153, 255));
         jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("Executar Ação");
-        jLabel7.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jLabel7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("(consulta)");
-        jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("(consulta)");
-        jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("(consulta)");
-        jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("(consulta)");
-        jLabel8.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jLabel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setText("(consulta)");
-        jLabel9.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jLabel9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel10.setText("(consulta)");
-        jLabel10.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jLabel10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel11.setText("(data)");
-        jLabel11.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jLabel11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel12.setText("(data)");
-        jLabel12.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jLabel12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel13.setText("(data)");
-        jLabel13.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jLabel13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel14.setText("(data)");
-        jLabel14.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jLabel14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel15.setText("(data)");
-        jLabel15.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jLabel15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel16.setText("(data)");
-        jLabel16.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jLabel16.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -375,20 +378,21 @@ public class TelaDoenças extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(TelaDoenças.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(A3_2_TelaDoenças.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(TelaDoenças.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(A3_2_TelaDoenças.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(TelaDoenças.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(A3_2_TelaDoenças.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(TelaDoenças.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(A3_2_TelaDoenças.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new TelaDoenças().setVisible(true);
+                new A3_2_TelaDoenças().setVisible(true);
             }
         });
     }

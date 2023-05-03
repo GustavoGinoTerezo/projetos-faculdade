@@ -9,12 +9,12 @@ package Forms;
  *
  * @author 822158424
  */
-public class TelaDeAdiçãoDeODS extends javax.swing.JFrame {
+public class A4_TelaDeAdiçãoDeODS extends javax.swing.JFrame {
 
     /**
      * Creates new form TelaDeAdiçãoDeODS
      */
-    public TelaDeAdiçãoDeODS() {
+    public A4_TelaDeAdiçãoDeODS() {
         initComponents();
     }
 
@@ -53,7 +53,6 @@ public class TelaDeAdiçãoDeODS extends javax.swing.JFrame {
         jComboBox1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Erradicação da pobreza", "Erradicação da fome", "Saúde e Bem-Estar", "Educação de qualidade", "Igualdade de gênero", "Água Potável e Saneamento", "Energia acessível e limpa", "Trabalho decente e crescimento econômico", "Inovação e infraestrutura", "Redução das desigualdades", "Cidades e comunidades sustentáveis", "Consumo e produção responsáveis", "Ação contra a Mudança Global do Clima", "Vida na Água", "Vida Terrestre", "Paz, Justiça e Instituições Eficazes", "Parcerias e Meios de Implementação" }));
 
-        BtnCadastrar_se.setBackground(new java.awt.Color(255, 255, 255));
         BtnCadastrar_se.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         BtnCadastrar_se.setText("Cadastrar");
         BtnCadastrar_se.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
@@ -69,7 +68,6 @@ public class TelaDeAdiçãoDeODS extends javax.swing.JFrame {
             }
         });
 
-        BtnCadastrar_se1.setBackground(new java.awt.Color(255, 255, 255));
         BtnCadastrar_se1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         BtnCadastrar_se1.setText("Cancelar");
         BtnCadastrar_se1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
@@ -299,20 +297,21 @@ public class TelaDeAdiçãoDeODS extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(TelaDeAdiçãoDeODS.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(A4_TelaDeAdiçãoDeODS.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(TelaDeAdiçãoDeODS.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(A4_TelaDeAdiçãoDeODS.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(TelaDeAdiçãoDeODS.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(A4_TelaDeAdiçãoDeODS.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(TelaDeAdiçãoDeODS.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(A4_TelaDeAdiçãoDeODS.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new TelaDeAdiçãoDeODS().setVisible(true);
+                new A4_TelaDeAdiçãoDeODS().setVisible(true);
             }
         });
     }
