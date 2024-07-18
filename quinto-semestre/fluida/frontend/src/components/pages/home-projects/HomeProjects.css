@@ -1,0 +1,479 @@
+.HP-container-user-projects {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+
+    .HP-container-user{
+        display: flex;  
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        width: 100%;
+        height: 20%;
+        min-height: 150px;
+        max-height: 150px;
+
+        .HP-container-image-label{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+            .HP-user-image{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                border: 1px solid #c9c9c9;
+                border-radius: 50%;
+                padding: 0.5vh;
+                height: 35px;
+                content: url("./../../../assets/action-icons/add-circle-full.svg");
+            }
+
+            .HP-label{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 5px;
+            }
+        }
+    }
+
+    .HP-container-projects{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: calc(100% - var(--header-height) - 15%);
+
+        .HP-container-label-your-projects{
+            width: 70%;
+
+            .HP-label{
+                padding-left: 105px;
+                color: var(--action-button-background-color);
+                font-weight: bold;
+                font-size: x-large;
+            }
+
+            @media screen and (max-width: 550px){
+                .HP-label{
+                    padding-left: 10px;
+                }
+            }
+
+        }
+
+        .HP-container-project{
+            display: flex;
+            margin-bottom: 15px;
+            border: 3px #f2f2f2 solid;
+            border-radius: 8px;
+            width: 65%;
+            height: 85%;
+
+            .HP-project{
+                display: flex;
+                padding-top: 55px;
+                width: 100%;
+                
+                .HP-grid-container {
+                    display: grid;
+                    grid-template-columns: 19% 19% 19% 19% 19%;
+                    gap: 10px 10px;
+                    padding-right: 55px;
+                    padding-bottom: 55px;
+                    padding-left: 55px;
+                    width: 100%;
+                    overflow: auto;
+                    overflow-x: hidden;
+                }
+
+                ::-webkit-scrollbar {
+                    width: 8px; /* Largura da barra de rolagem */
+                }
+
+                ::-webkit-scrollbar-thumb {
+                    border-radius: 32px; /* Raio da borda da parte deslizante */
+                    background-color: #ebebeb; /* Cor da parte deslizante da barra de rolagem */
+                }
+
+                @media screen and (max-width: 1350px) { 
+                    .HP-grid-container{
+                        grid-template-columns: 24% 24% 24% 24%;
+                    }
+                }
+
+                @media screen and (max-width: 1100px) { 
+                    .HP-grid-container{
+                        grid-template-columns: 32% 32% 32%;
+                    }
+                }
+
+                @media screen and (max-width: 850px) { 
+                    .HP-grid-container{
+                        grid-template-columns: 49% 49% ;
+                    }
+                }
+
+                @media screen and (max-width: 600px) { 
+                    .HP-grid-container{
+                        grid-template-columns: 99%;
+                    }
+                }
+
+                .HP-grid-item {
+                    display: flex;
+                    position: relative;
+                    cursor: pointer;
+                    margin: 10px;
+                    border: 1px solid #e4e4e4;
+                    border-radius: 8px;
+                    background-color: #f2f2f2;
+                    width: 100%;
+                    min-width: 60px;
+                    height: 100%;
+                    min-height: 200px;
+                    max-height: 250px;
+                    font-weight: bold;
+                    font-size: 18px;
+                    text-align: center; 
+
+                    .HP-project-name{
+                        display: flex;
+                        padding: 5px;
+                        width: 100%;
+                    }
+
+                    .HP-project-options{
+                        display: flex;
+                        position: absolute;
+                        top: 5px;
+                        right: 5px;
+                        border-radius: 50%;
+                        width: 20px;
+                        height: 20px;
+
+                        .HP-header-icon {
+                            cursor: alias;
+                            border-radius: 50%;
+                            background-color: #b2b2b2;
+                            width: 20px;
+                            height: 20px;
+                        }
+
+                        .HP-header-icon:hover{
+                            background-color: var(--action-button-selected-background-color);
+                        }
+                    }
+                }
+
+                .HP-grid-item-new-project{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    margin: 10px;
+                    border: 1px solid #e4e4e4;
+                    border-radius: 8px;
+                    background-color: #f2f2f2;
+                    width: 100%;
+                    min-width: 60px;
+                    height: 100%;
+                    min-height: 200px;
+                    max-height: 250px;
+                    font-size: 18px;
+                    text-align: center;
+
+                    .HP-container-new-project{
+                        width: 100%;
+
+                        .HP-add-new-project{
+                            cursor: pointer;
+                            border: 1px solid #c9c9c9;
+                            border-radius: 50%;
+                            padding: 0.5vh;
+                            height: 35px;
+                            content: url("./../../../assets/action-icons/add-circle-full.svg");
+                        }
+
+                        .HP-label-new-project{
+                            font-weight: bold;
+                            font-size: small;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.HP-dialog-new-project-container {
+    position: fixed;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgb(174, 174, 174) 0px 0px 5px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 16px;
+    width: 30%;
+    height: 20%;
+    min-height: 140px;
+    max-height: 140px;
+
+    .HP-container-close-dialog{
+        display: flex;
+        justify-content: right;
+    }
+
+    .HP-container-button-new-project{
+        display: flex;
+        justify-content: right;
+
+        .HP-button-new-project{
+            cursor: pointer;
+            border: none;
+            border-radius: var(--border-radius);
+            background-color: #fe8e04;
+            padding: 0px 10px;
+            width: 200px;
+            height: 40px;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .HP-button-new-project:hover{
+            background-color: var(--action-button-hover);
+        }
+
+    }
+
+
+}
+
+.HP-dialog-update-name-project-container{
+    position: fixed;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgb(174, 174, 174) 0px 0px 5px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 16px;
+    width: 30%;
+    height: 20%;
+    min-height: 140px;
+    max-height: 140px;
+
+    .HP-container-label-update-project-name{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .HP-container-label-current-name-project{
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            font-size: 14px;
+
+            .HP-label-current-project-name{
+                padding-left: 5px;
+                color: var(--action-button-background-color);
+                font-size: 18px;
+            }
+        }
+    }
+
+    .HP-container-close-dialog-project-update{
+        display: flex;
+        justify-content: right;
+    }
+
+    .HP-container-buttons-update-project{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+
+        .HP-button-update-project{
+            cursor: pointer;
+            border: none;
+            border-radius: var(--border-radius);
+            background-color: #fe8e04;
+            padding: 0px 10px;
+            width: 100%;
+            height: 40px;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .HP-button-update-project-disabled {
+            cursor: not-allowed;
+            background-color: #d3d3d3; 
+            }
+
+        .HP-button-delete-project{
+            cursor: pointer;
+            border: none;
+            border-radius: var(--border-radius);
+            background-color: #fe0404;
+            padding: 0px 10px;
+            width: 100%;
+            height: 40px;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    }
+
+    
+    
+}
+
+@media screen and (max-width: 850px) { 
+    .HP-dialog-new-project-container{
+        min-width: 200px;
+    }
+}
+
+@media screen and (max-width: 600px) { 
+    .HP-dialog-new-project-container{
+        top: 200px;
+    }
+}
+
+.HP-dialog-overlay{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+    height: 100%;
+}
+
+.HP-container-user-photo{
+    display: flex;
+    position: fixed;
+    top: 300px;
+    left: 50%;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+    box-shadow: rgb(174, 174, 174) 0px 0px 5px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 16px;
+    width: 20%;
+    min-width: 300px;
+    max-width: 300px;
+    height: 100%;
+    min-height: 350px;
+    max-height: 400px;
+
+    .HP-container-close-user-photo{
+        display: flex;
+        justify-content: right;
+    }
+
+    .HP-container-username-label{
+
+        .HP-hello{
+            margin-right: 5px;
+        }
+
+        .HP-username-label{
+            display: flex;
+            justify-content: center;
+        }
+
+        .HP-welcome{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .HP-container-photo{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        .HP-user-photo-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .HP-label-new-photo{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+    }
+
+    .HP-user-photo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: #f4f4f4;
+        height: 180px;
+
+    }
+
+    .photo{
+        border: 8px solid #e4e4e4;
+        border-radius: 50%;
+        background-color: #f4f4f4;
+        padding: 18px;
+        width: 60%;
+        height: 60%;
+    }
+
+    .photoSelected{
+        display: flex;
+        border-radius: 50%;
+        background-color: #f4f4f4;
+        width: 90%;
+        height: 90%;
+    }
+
+    .HP-container-button-add-photo{
+        display: flex;
+        justify-content: center;
+
+        .HP-button-add-photo{
+            cursor: pointer;
+            border: none;
+            border-radius: var(--border-radius);
+            background-color: #fe8e04;
+            padding: 0px 10px;
+            width: 200px;
+            height: 40px;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    }
+}
+
+.blur-background {
+    filter: blur(3px);
+}
+
+.username-style {
+    color: var(--action-button-selected-background-color);
+    font-weight: bold;
+}
+
+

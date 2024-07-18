@@ -1,0 +1,19 @@
+.IFC-input-field-container-holder {
+	display: flex;
+	row-gap: 4px;
+	flex-direction: column;
+	justify-content: left;
+	padding-top: 1rem;
+	width: 100%;
+}
+
+.IFC-input-field-container {
+	display: grid;
+	gap: 0.5rem;
+}
+
+.IFC-input-field-description {
+	color: #3e3e3e;
+	font-weight: bold;
+	font-size: var(--login-registration-input-field-title-font-size);
+}

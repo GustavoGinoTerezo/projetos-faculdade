@@ -1,0 +1,64 @@
+:root {
+	--border-shadow-color: rgb(211, 211, 211);
+	--border-shadow-radius: 8px;
+
+	--border-radius: 8px;
+
+	--header-height: 4rem;
+	--header-home-height: var(--header-height);
+	--header-logo-height: 35%;
+
+	--footer-height: 4rem;
+	--footer-logo-height: 25%;
+
+	--action-button-background-color: #ff8c00; /* Padrão */
+	--action-button-background-color-inactive: #e87f00; /* Inativo */
+	--action-button-selected-background-color: #f18500; /* Selecionado */
+	--action-button-hover: #ffa83f; /* Hover */
+
+	--action-button-height: 50px;
+	--action-button-font-size: 20px;
+
+	--login-registration-header-font-size: 25px;
+	--login-registration-input-field-title-font-size: 15px;
+	--login-registration-placeholder-font-size: 14px;
+
+	--background-color: rgb(255, 255, 255);
+
+	--background-elements-color: #f4f4f4;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	padding: 0;
+	min-width: 320px;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif, Geneva, Verdana;
+}
+
+::-webkit-scrollbar {
+	width: 8px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 32px; /* Raio da borda da parte deslizante */
+	background-color: #ebebeb; /* Cor da parte deslizante da barra de rolagem */
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* Remove o olhinho de senha do input que é inserido automaticamente */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+	display: none;
+}
+
+@media screen and (max-width: 1100px) {
+	:root {
+		--header-home-height: 170px;
+	}
+}

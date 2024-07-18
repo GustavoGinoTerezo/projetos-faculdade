@@ -1,0 +1,16 @@
+.PCN-container {
+	display: flex;
+	align-items: center;
+	column-gap: 4px;
+}
+
+.PCN-icon {
+	width: 14px;
+	height: 14px;
+}
+
+.PCN-text {
+	font-size: smaller;
+	padding: 0;
+	margin: 0;
+}

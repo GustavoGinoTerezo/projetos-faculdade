@@ -1,0 +1,49 @@
+.LR-C-forms-container-holder {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: calc(100vh - var(--header-height));
+}
+
+.LR-C-forms-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: var(--border-shadow-color) 0px 0px var(--border-shadow-radius);
+	border-radius: var(--border-radius);
+	background-color: white;
+	padding: 30px 30px 50px;
+	width: 440px !important;
+}
+
+.LR-C-forms {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100% !important;
+	padding: 10%;
+}
+
+.LR-C-forms > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.LR-C-forms-horizontal-lock {
+	--margin: 20px;
+	padding-top: calc(50vh - 220px - var(--header-height) * 2 + 18px - var(--margin));
+	margin-top: var(--margin);
+}
+
+.LR-C-forms-vertical-lock {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	z-index: 10;
+}

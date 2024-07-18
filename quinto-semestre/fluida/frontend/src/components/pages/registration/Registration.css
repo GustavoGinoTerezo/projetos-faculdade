@@ -1,0 +1,74 @@
+.R-background-container {
+	width: 100vw;
+	height: calc(100vh - var(--header-height));
+}
+
+.R-registration-header {
+	padding-right: 10%;
+	padding-left: 10%;
+	width: 100%;
+	font-weight: 500;
+	font-size: var(--login-registration-header-font-size);
+	text-align: center;
+}
+
+.R-registration-button {
+	padding-top: 1rem;
+	width: 100% !important;
+	height: var(--action-button-height);
+}
+
+.R-go-back-button-container {
+	display: flex;
+	justify-content: left;
+	padding-top: 1rem;
+	padding-left: 1rem;
+	width: 100% !important;
+}
+
+.R-go-back-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	border: 0px;
+	background-color: transparent;
+	padding: 0;
+	width: 2rem !important;
+	height: 2rem;
+}
+
+.R-go-back-button svg {
+	width: 100%;
+	height: 100%;
+}
+
+.R-registration-footer {
+	display: flex;
+	justify-content: center;
+	padding-top: 1rem;
+	width: 80% !important;
+	font-weight: 600;
+}
+
+.R-registration-footer a {
+	color: black;
+	text-decoration: none;
+}
+
+.R-registration-footer-login-href {
+	color: var(--action-button-background-color);
+	text-decoration: none;
+}
+
+.R-registration-footer {
+	font-weight: normal;
+}
+
+.R-go-back-button:hover path {
+	fill: var(--action-button-selected-background-color) !important;
+}
+
+.R-container-offset {
+	height: 38px;
+}
